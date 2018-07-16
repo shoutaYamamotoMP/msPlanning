@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<script type="text/javascript">
+    function backPage() {
+        alert("前のページに戻ります");
+    }
+
+    function changeBounty(bounty) {
+        alert("懸賞金による並び替えを行います");
+    }
+
+    function changeName(name) {
+        alert("名前による絞り込みを行います");
+    }
+</script>
+
+<style>
+    #container {
+        display: grid;
+        grid-template-rows: repeat(auto-fill, auto);
+        grid-template-columns: 100px 150px 100px;
+    }
+
+    #header {
+        background: #f88;
+        margin: 0px;
+        padding: 1px;
+        border: 1px solid;
+    }
+
+    #item {
+        margin: 0px;
+        padding: 1px;
+        border: 1px solid;
+    }
+</style>
+
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>一覧画面</title>
+    </head>
+
+    <body>
+        <!-- 戻るボタン -->
+        <p>
+            <input type="button" value="戻る" onclick="backPage()">
+        </p>
+
+        <!-- グリッド -->
+        <div id="container">
+            <!-- ヘッダ -->
+            <div id="header">
+                <div>
+                    懸賞金
+                </div>
+                <div>
+                    <select name="bounty" onchange="changeBounty(this.value)">
+                        <option value="asc">昇順</option>
+                        <option value="des">降順</option>
+                    </select>
+                </div>
+            </div>
+            <div id="header">
+                <div>
+                    名前
+                </div>
+                <div>
+                    <input type="text" name="name" style="width:120px;" onchange="changeName(this.value)">
+                </div>
+            </div>
+            <div id="header">C</div>
+            
+            <!-- 1行目 -->
+            <div id="item">100万円</div>
+            <div id="item">市川太郎</div>
+            <div id="item">窃盗罪</div>
+            <!-- 2行目 -->
+            <div id="item">200万円</div>
+            <div id="item">西田次郎</div>
+            <div id="item">万引き</div>
+            <!-- 3行目 -->
+            <div id="item">300万円</div>
+            <div id="item">美浦三郎</div>
+            <div id="item">殺人罪</div>
+        </div>
+    </body>
+
+</html>
