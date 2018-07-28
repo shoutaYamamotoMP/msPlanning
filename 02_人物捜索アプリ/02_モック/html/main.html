@@ -1,0 +1,63 @@
+<html lang="ja">
+<head>
+<meta name="viewport" content="width=device-width">
+
+<title>人物捜索アプリ</title>
+<img src="../img/title.png" style="width:100%; height:auto;">
+
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript">
+$(function(){
+     
+	$(".wanted p").click(function(){
+	    $(this).next("ul").slideToggle();
+	    $(this).children("span").toggleClass("open");
+	});
+	
+	$(".missing p").click(function(){
+	    $(this).next("ul").slideToggle();
+	    $(this).children("span").toggleClass("open");
+	});
+});
+</script>
+
+<ul class="wanted">
+    <li>
+        <p><span>指名手配</span></p>
+        <ul>
+            <li><a href="#">北海道</a></li>
+            <li><a href="#">東北地方</a></li>
+            <li><a href="#">関東地方</a></li>
+            <li><a href="#">中部地方</a></li>
+            <li><a href="#">近畿地方</a></li>
+            <li><a href="#">中国・四国地方</a></li>
+            <li><a href="#">九州・沖縄地方</a></li>
+        </ul>
+    </li>
+</ul>
+
+<ul class="missing">
+    <li>
+        <p><span>行方不明</span></p>
+        <ul>
+            <li><a href="#">北海道</a></li>
+            <li><a href="#">東北地方</a></li>
+            <li><a href="#">関東地方</a></li>
+            <li><a href="#">中部地方</a></li>
+            <li><a href="#">近畿地方</a></li>
+            <li><a href="#">中国・四国地方</a></li>
+            <li><a href="#">九州・沖縄地方</a></li>
+        </ul>
+    </li>
+</ul>
+
+<div class="info">
+	<a href="./board.html">情報提供掲示板</a>
+</div>
+
+</body>
+</html>

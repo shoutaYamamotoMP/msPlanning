@@ -1,0 +1,117 @@
+input[type="text"] {
+	margin-left:20px;
+}
+textarea {
+	margin-left:20px;
+	vertical-align:top;
+}
+#button_m {
+	width:80px;
+	margin: 10px 10px 10px 10px;
+}
+#button_l {
+	width:120px;
+	margin: 10px 10px 10px 10px;
+}
+.button_set {
+  text-align: center;
+}
+div.info a {
+	margin:40px;
+}
+
+ul.wanted {
+	width:80%;
+	margin:0 auto 10px;
+	padding:10px;
+	font-size:16px;
+	list-style: none;
+}
+ul.wanted a {
+	display:block;
+	padding:10px;
+	background-position:97% center;
+	background-repeat:no-repeat;
+	text-decoration:none;
+	color:#000;
+	font-weight:bold;
+}
+ul.wanted span {
+	display:block;
+	padding:10px;
+	background-position:97% center;
+	background-repeat:no-repeat;
+	color:#000;
+	font-weight:bold;
+}
+ul.wanted ul {
+    padding-left: 10px;
+	display:none;
+	list-style: none;
+}
+ul.wanted li {
+	background: -moz-linear-gradient(top, #C6F0FE, #27BCF9);
+}
+ul.wanted li p {
+	background: -moz-linear-gradient(top, #C6F0FE, #27BCF9);
+	background: -webkit-gradient(linear, left top, left bottom, from(#690d0d), to(#a91b1b));
+	cursor:pointer;
+}
+ul.wanted > li > p span {
+	background-image:url(../img/open.png);
+}
+ul.wanted > li > p span.open {
+	background-image:url(../img/close.png);
+}
+ul.wanted li ul li {
+	background:#999;
+	border-bottom:1px solid #EEE;
+}
+
+ul.missing {
+	width:80%;
+	margin:0 auto 10px;
+	padding:10px;
+	font-size:16px;
+	list-style: none;
+}
+ul.missing a {
+	display:block;
+	padding:10px;
+	background-position:97% center;
+	background-repeat:no-repeat;
+	text-decoration:none;
+	color:#000;
+	font-weight:bold;
+}
+ul.missing span {
+	display:block;
+	padding:10px;
+	background-position:97% center;
+	background-repeat:no-repeat;
+	color:#000;
+	font-weight:bold;
+}
+ul.missing ul {
+    padding-left: 10px;
+	display:none;
+	list-style: none;
+}
+ul.missing li {
+	background: -moz-linear-gradient(top, #C6F0FE, #27BCF9);
+}
+ul.missing li p {
+	background: -moz-linear-gradient(top, #C6F0FE, #27BCF9);
+	background: -webkit-gradient(linear, left top, left bottom, from(#0e4558), to(#1b4da9));
+	cursor:pointer;
+}
+ul.missing > li > p span {
+	background-image:url(../img/open.png);
+}
+ul.missing > li > p span.open {
+	background-image:url(../img/close.png);
+}
+ul.missing li ul li {
+	background:#999;
+	border-bottom:1px solid #EEE;
+}
